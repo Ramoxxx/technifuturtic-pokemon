@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/pokescript.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            generations_json = await loadGenerations();
+            displayGenerations(generations_json);
+        });
+    </script>
+</head>
+<body>
+    <header id="header"><h1>Pokemon pedia</h1></header>
+    <div class="displayNone" id="generations">
+        <h2>Choose a generation :</h2>
+        <ul id="generations-list"></ul>
+    </div>
+    <div class="displayNone" id="message"></div>
+    <div class="displayNone" id="species">
+        <ul id="species-list"></ul>
+    </div>         
+</body>
+</html>

@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Pokemon Solid";
+    src: url("../fonts/PokemonSolid.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Pokemon Hollow";
+    src: url("../fonts/PokemonHollow.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.displayNone {
+    display:none !important;
+}
+
+html,body {
+    margin:0;
+    padding:0;    
+}
+body {
+    background-color: #7DAD71;
+}
+#header
+{
+    width:100%;
+    min-height:280px;
+    background-image: url("../images/pokemons_banner.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#header h1 {
+    font-family: "Pokemon Solid";
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    margin:0;
+    width:100%;
+    text-align: center;
+    font-weight: normal !important;
+    color:#F7C501;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+#message
+{
+    width: 100%;
+    text-align: center;
+    font-family: "Pokemon Solid";
+    font-size: 2em;
+    color:#4074b5;
+}
+
+#generations {
+    text-align: center;
+    width: 100%;
+}
+#generations h2 {
+    font-family: "Pokemon Solid";
+    font-size: 2em;
+    letter-spacing: 0.2em;    
+    text-align: center;
+    font-weight: normal !important;
+    color:#F7C501;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+
+ul#generations-list {
+    padding:0;
+}
+ul#generations-list li {
+    display: inline-block;
+    margin:10px;
+}
+ul#generations-list li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    display: block;
+    padding:12px 10px 10px 10px;
+    color: #F7C501;
+    background-color: #4074b5;
+    border:2px solid #F7C501;
+    text-decoration: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+ul#generations-list li a:hover {
+    color: #4074b5;
+    background-color: #F7C501;
+    border-color:#4074b5;
+}
+
+ul#species-list {
+    margin:0;
+    padding:0;
+    width:100%;
+    text-align: center;
+}
+ul#species-list > li {
+    list-style: none;
+    display: inline-block;
+    margin:10px;
+    transition:  all 1s;   
+}
+ul#species-list > li a {
+    display:block;
+    position:relative;
+    text-align: center;
+    
+    padding: 10px 20px; 
+    border: 2px solid #4074b5;
+    color: #4074b5;
+    background-color: #F7C501;
+    border-radius: 4px;
+
+    /* font-family: "Pokemon Solid"; */
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-decoration: none;
+    transition:  all 0.5s;
+}
+ul#species-list > li a:hover {
+    color: #F7C501;
+    background-color: #4074b5;
+    border-color: #F7C501;
+}
+ul#species-list > li a img {
+    display:inline-block;
+    margin:0;
+    padding:0;
+    width: 50px;
+    heigt:auto;
+}
